@@ -57,6 +57,11 @@
             flex-basis: 500px;
             overflow-y: scroll;
         }
+        @media (max-width: 1024px) {
+                #side-panel {
+                    display: none;
+                }
+            }
 
         #map {
             flex-grow: 1;
@@ -83,15 +88,7 @@
             background-color: #f2f2f2;
         }
 
-        @media (max-width: 1024px) {
-        #container {
-          flex-direction: column-reverse;
-        }
-        
-        #table {
-          display: none;
-        }
-      }
+       
       
 
         
@@ -103,12 +100,12 @@
         <div id="side-panel">
 
             <h2>Vietnam Disaster List</h2>
-            <button>Sort by Magnitude</button>
+            <button>Sort by Levels</button>
 
             <table>
                 <tr>
-                    <th>ID</th>
-                    <th>Magnitude</th>
+                    <th>Type</th>
+                    <th>Levels(1-10)</th>
                     <th>Timestamp</th>
                 </tr>
             </table>
